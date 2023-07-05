@@ -20,11 +20,11 @@ from django.http import HttpResponse
 
 
 def my_view(request):
-    print('posso fazer outras coisas')
-    return HttpResponse('Uma mensagem para alguém')
+    print('você conseguiu ter uma request e uma response')
+    return HttpResponse('Você conseguiu sem erro')
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blog/', my_view),
+    path('blog/', my_view)
 ]
