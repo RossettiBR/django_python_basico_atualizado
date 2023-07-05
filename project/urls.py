@@ -19,16 +19,16 @@ from django.urls import path
 from django.http import HttpResponse
 
 
-def my_blog(request):
+def blog(request):
     return HttpResponse('BLOG')
 
 
-def my_home(request):
+def home(request):
     return HttpResponse('HOME')
 
 
 urlpatterns = [
-    path('', my_home),
-    path('blog/', my_blog),
+    path('', home),
+    path('blog/', blog),
     path('admin/', admin.site.urls),
 ]
