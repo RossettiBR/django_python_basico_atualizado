@@ -20,7 +20,6 @@ from django.http import HttpResponse
 
 
 def my_blog(request):
-    print('você conseguiu ter uma request e uma response')
     return HttpResponse('BLOG')
 
 
