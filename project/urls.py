@@ -28,7 +28,7 @@ def my_home(request):
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('blog/', my_blog),
     path('', my_home),
+    path('blog/', my_blog),
+    path('admin/', admin.site.urls),
 ]
