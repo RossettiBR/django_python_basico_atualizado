@@ -28,3 +28,17 @@ def exemplo(request):
         'exemplo.html',
         context
     )
+
+
+def post(request, id):
+    print('post', id)
+
+    context = {
+        'posts': posts,
+    }
+
+    return render(
+        request,
+        'blog/index.html',
+        context
+    )
